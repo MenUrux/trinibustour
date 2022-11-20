@@ -11,6 +11,8 @@
     --blue-munsell: #448fa3ff;
     --middle-blue: #68c5dbff;
     --bg-blanco: #ffffff;
+    --verde: #9ae19d;
+    --verdedark: #537a5a;
 
 }
 
@@ -189,13 +191,6 @@ li::marker {
 }
 
 
-#right-side {
-    background: url(../img/talice1.jpg) no-repeat center top;
-    background-image: url(../img/talice1.jpg);
-    background-repeat: no-repeat;
-    background-color: var(--rojo);
-
-}
 
 /* Fin de estilos generales */
 
@@ -229,29 +224,54 @@ div.text-container {
     border: 2px solid black;
     padding: 5%;
     backdrop-filter: blur(20px);
-
-
-    display: flex;
-    position: absolute;
-    top: 25%;
-    justify-content: center;
     gap: 1rem;
     align-items: center;
     color: white;
     font-size: 2vh;
-    margin: 0 15vw;
     width: 70vw;
     padding: 20px;
     backdrop-filter: blur(10px);
     font-weight: 700;
     border-radius: 20px;
     border: 2px solid white;
-    text-shadow: 2px 2px 2px black;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 50%);
 }
 
 
+.card-group{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    color: black;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
 
+.card{
+    width: min-content;
+}
+
+.card-title, .card-text{
+    color: black;
+}
+
+.card-group>.card:nth-child(1){
+    background-color: var(--verde);
+}
+
+.card-group>.card:nth-child(2){
+    background-color: var(--rojo);
+}
+
+.card-group>.card:nth-child(1)>.card-body>.btn-primary{
+    background-color: var(--verdedark);
+    color: white;
+}
+
+.card-group>.card:nth-child(2)>.card-body>.btn-primary{
+    background-color: var(--rojodark);
+    color: white;
+}
 
 
 
