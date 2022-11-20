@@ -113,19 +113,6 @@ li::marker {
     background-size: cover;
 }
 
-.side {
-    height: calc(100vh - 90px);
-    width: 100%;
-
-    display: grid;
-    place-items: center;
-
-    overflow: hidden;
-    position: absolute;
-
-
-    user-select: none;
-}
 
 .carousel-item {
     height: calc(100vh - 90px);
@@ -220,7 +207,7 @@ div.text-container {
 
 
 .container-custom{
-    margin-top: 5%;
+    margin-top: 2%;
     border: 2px solid black;
     padding: 5%;
     backdrop-filter: blur(20px);
@@ -234,6 +221,12 @@ div.text-container {
     font-weight: 700;
     border-radius: 20px;
     border: 2px solid white;
+}
+
+.container-custom>h1{
+    text-shadow: 2px 2px 2px black;
+    font-size: 4rem;
+    text-align: center;
 }
 
 
@@ -265,11 +258,17 @@ div.text-container {
 
 .card-group>.card:nth-child(1)>.card-body>.btn-primary{
     background-color: var(--verdedark);
+    border-color: white;
     color: white;
+}
+
+.card-group>.card>.card-body>.btn-primary:hover{
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card-group>.card:nth-child(2)>.card-body>.btn-primary{
     background-color: var(--rojodark);
+    border-color: white;
     color: white;
 }
 
