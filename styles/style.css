@@ -47,6 +47,7 @@ nav {
     /* background-color: white; */
     z-index: 99;
     width: 100%;
+    height: min-content;
 }
 
 .nav-img {
@@ -73,10 +74,11 @@ nav {
     display: flex;
     user-select: none;
     text-align: center;
-    align-items: baseline;
     align-content: center;
-    justify-content: flex-end;
     margin-right: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 li::marker {
@@ -124,6 +126,7 @@ li::marker {
     height: calc(100vh - 90px);
     width: 100vw;
     background-size: cover;
+    font-variant: small-caps;
 }
 
 
@@ -154,7 +157,6 @@ li::marker {
     margin: 0 15vw;
     width: 70vw;
     padding: 20px;
-    /* background-color: var(--rojoalpha); */
     backdrop-filter: blur(10px);
     font-weight: 700;
     border-radius: 20px;
@@ -178,26 +180,11 @@ li::marker {
     background-size: cover;
 }
 
-
-#left-side {
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../img/parque-centenario-trinidad.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--rojo);
-    z-index: 1;
-}
-
 .img-bus {
     width: 250px;
     position: relative;
 }
 
-.text-extra {
-    font-size: 200px;
-}
 
 #right-side {
     background: url(../img/talice1.jpg) no-repeat center top;
@@ -256,29 +243,22 @@ div.text-container {
 @media (max-width: 425px) {
     .menu-all {
         flex-direction: row;
-        height: 200px;
         justify-content: center;
         align-items: center;
-
     }
 
     .menu-left {
-        width: 8rem;
         margin: 0px;
     }
 
     .menu-right {
-        justify-content: flex-end;
-        flex-direction: row;
         flex-wrap: wrap;
-        gap: 36px;
-        row-gap: 30px;
-        margin-right: 0px;
     }
 
     .menu-item {
-        padding: 16px;
-        margin: 12px;
+        display: flex;
+        padding: 0.8rem;
+        flex-direction: column;
     }
 
     .carousel-item .title {
