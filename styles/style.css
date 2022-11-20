@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+:root {
+    
+    --rojo: #d7263dff;
+    --rojoalpha: #d7263e74;
+    --amarillo: #e2a926ff;
+    --texto: #02182bff;
+    --texto-secundario: #0197f6ff;
+    --blue-munsell: #448fa3ff;
+    --middle-blue: #68c5dbff;
+    --bg-blanco: #ffffff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+nav {
+    position: sticky;
+    height: 90px;
+    background-color: var(--bg-blanco);
+}
+
+.menu-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: white; */
+    z-index: 99;
+    width: 100%;
+}
+
+.nav-img {
+    margin: 5px;
+    width: 5rem;
+}
+
+.nav-title {
+    font-size: 36px;
+    font-variant: small-caps;
+}
+
+.menu-left {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    margin-left: 16px;
+
+}
+
+.menu-right {
+    display: flex;
+    user-select: none;
+    text-align: center;
+    align-items: baseline;
+    align-content: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+
+li::marker {
+    content: '';
+}
+
+.menu-item {
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    margin: 8px;
+    background-color: white;
+    box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.1), -10px 0px 20px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.menu-item:hover {
+    background-color: var(--amarillo);
+    box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.14), -10px 0px 20px -3px rgba(0, 0, 0, 0.14);
+}
+
+.container-carousel {
+    width: 100%;
+}
+
+.side {
+    height: calc(100vh - 90px);
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+
+
+    user-select: none;
+}
+
+
+.carousel-item:nth-child(1) .title .title-secundario {
+    color: var(--amarillo);
+}
+
+.carousel-item:nth-child(2) .title .title-secundario {
+    color: var(--middle-blue);
+}
+
+.carousel-item:nth-child(3) .title .title-secundario {
+    color: var(--rojo);
+    font-style: italic;
+}
+
+.carousel-item {
+    height: calc(100vh - 90px);
+    width: 100vw;
+    background-size: cover;
+}
+
+.carousel-item .title {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+    margin: 0 15vw;
+    width: 70vw;
+    padding: 20px;
+    /* background-color: var(--rojoalpha); */
+    backdrop-filter: blur(10px);
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-item:nth-child(1) {
+    background: url(../img/museo-historico-fernando.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background: url(../img/talice1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background: url(../img/parque-centenario-trinidad.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+#left-side {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/parque-centenario-trinidad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--rojo);
+    z-index: 1;
+}
+
+.img-bus {
+    width: 250px;
+    position: relative;
+}
+
+.bg-left {}
+
+.text-extra {
+    font-size: 200px;
+}
+
+#right-side {
+    background: url(../img/talice1.jpg) no-repeat center top;
+    background-image: url(../img/talice1.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--rojo);
+
+}
+
+/* Fin de estilos generales */
+
+/* Comienzo paginas */
+
+#tours {
+    background-color: var(--rojo);
+    padding: 2vh;
+    height: calc(100vh - 90px);
+}
+
+
+.container h1 {
+    font-size: 5vh;
+    margin: auto;
+    width: calc(100% - 20%);
+    border-bottom: 2px solid;
+}
+
+div.text-container {
+    padding: 36px;
+    margin: auto;
+}
+
+.img-tour {
+    width: 500px;
+}
