@@ -2,7 +2,7 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 :root {
-    
+
     --rojo: #d7263dff;
     --rojoalpha: #d7263e74;
     --amarillo: #e2a926ff;
@@ -101,7 +101,9 @@ li::marker {
 }
 
 .container-carousel {
-    width: 100%;
+    height: calc(100vh - 90px);
+    width: 100vw;
+    background-size: cover;
 }
 
 .side {
@@ -118,6 +120,12 @@ li::marker {
     user-select: none;
 }
 
+.carousel-item {
+    height: calc(100vh - 90px);
+    width: 100vw;
+    background-size: cover;
+}
+
 
 .carousel-item:nth-child(1) .title .title-secundario {
     color: var(--amarillo);
@@ -132,11 +140,7 @@ li::marker {
     font-style: italic;
 }
 
-.carousel-item {
-    height: calc(100vh - 90px);
-    width: 100vw;
-    background-size: cover;
-}
+
 
 .carousel-item .title {
     display: flex;
@@ -156,6 +160,7 @@ li::marker {
     border-radius: 20px;
     border: 2px solid white;
     text-shadow: 2px 2px 2px black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-item:nth-child(1) {
@@ -189,8 +194,6 @@ li::marker {
     width: 250px;
     position: relative;
 }
-
-.bg-left {}
 
 .text-extra {
     font-size: 200px;
@@ -229,4 +232,87 @@ div.text-container {
 
 .img-tour {
     width: 500px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-img {
+        margin: 5px;
+        width: 5rem;
+    }
+
+    .nav-title {
+        display: none;
+    }
+
+    .carousel-item .title {
+        font-size: 2rem;
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+    .menu-all {
+        flex-direction: row;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu-left {
+        width: 8rem;
+        margin: 0px;
+    }
+
+    .menu-right {
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 36px;
+        row-gap: 30px;
+        margin-right: 0px;
+    }
+
+    .menu-item {
+        padding: 16px;
+        margin: 12px;
+    }
+
+    .carousel-item .title {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    .menu-left {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .menu-right {
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .menu-item {
+        font-size: 0.8rem;
+    }
+
+    .carousel-item .title {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        text-align: center;
+    }
 }
