@@ -4,6 +4,7 @@
 :root {
 
     --rojo: #d7263dff;
+    --rojodark: rgb(163, 34, 51);
     --rojoalpha: #d7263e74;
     --amarillo: #e2a926ff;
     --texto: #02182bff;
@@ -232,27 +233,21 @@ div.text-container {
 
 .card-group{
     display: flex;
-    flex-direction: row;
-    margin: auto;
     color: black;
     gap: 10%;
-    justify-content: center;
-    align-items: center;
+
 }
 
-.card{
-    width: min-content;
+.card-group>.card{
+    transition: 500ms;
 }
 
-.card-title, .card-text{
-    color: black;
-}
-
-.card-group>.card:nth-child(1){
+.card-group>.card:nth-child(1):hover{
     background-color: var(--verde);
+
 }
 
-.card-group>.card:nth-child(2){
+.card-group>.card:nth-child(2):hover{
     background-color: var(--rojo);
 }
 
@@ -272,9 +267,67 @@ div.text-container {
     color: white;
 }
 
+#tour-container.card:nth-child(2)>.card-body>.btn-primary{
+    background-color: var(--rojodark);
+}
+
+
+/* Tour bien */
+#tour-container{
+    display: flex;
+    justify-content: center;
+    color: black;
+    gap: 10%;
+
+}
+
+.card-1, .card-2{
+    transition: ease-in-out 250ms;
+}
+
+.card-1:hover, .card-2:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-1:hover{
+    background-color: var(--verde);
+}
+
+.card-2:hover{
+    background-color: var(--rojo);
+}
+
+.card img{
+    width: 100%;
+    height: 40%;
+    object-fit: fill;
+}
+
+.card .card-title{
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-1 .btn-primary{
+    background-color: var(--verdedark);
+    border-color: white;
+    color: white;
+}
+
+.card-2 .btn-primary{
+    background-color: var(--rojodark);
+    border-color: white;
+    color: white;
+}
 
 
 
+/* #tour-container{
+    border: 4px solid var(--rojo);
+    background-color: var(--rojo);
+
+} */
 
 
 
