@@ -202,15 +202,30 @@ div.text-container {
 }
 
 .tours-bg {
-    background-image: url(../img/talice3.jpg);
+    background-image: url(../img/.jpg);
+    background-color: var(--middle-blue);
+
 }
+
+.aboutus-bg {
+    background-image: url(../img/.jpg);
+    background-color: var(--middle-blue);
+
+}
+
+.faq-bg {
+    background-image: url(../img/.jpg);
+    background-color: var(--middle-blue);
+
+}
+
 
 
 .container-custom {
     margin-top: 2%;
     border: 2px solid black;
     padding: 5%;
-    background-color: hsla(0, 0%, 100%, 0.4);
+    background-color: hsla(0, 0%, 56%, 0.57);
     backdrop-filter: blur(20px);
     gap: 1rem;
     align-items: center;
