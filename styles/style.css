@@ -30,9 +30,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-a,
-a:visited {
+nav a,
+nav a:visited {
     text-decoration: none;
     color: var(--texto);
 }
@@ -202,78 +201,39 @@ div.text-container {
     width: 500px;
 }
 
-.tours-bg{
+.tours-bg {
     background-image: url(../img/talice3.jpg);
 }
 
 
-.container-custom{
+.container-custom {
     margin-top: 2%;
     border: 2px solid black;
     padding: 5%;
+    background-color: hsla(0, 0%, 100%, 0.4);
     backdrop-filter: blur(20px);
     gap: 1rem;
     align-items: center;
-    color: white;
     font-size: 2vh;
     width: 70vw;
     padding: 20px;
     backdrop-filter: blur(10px);
-    font-weight: 700;
+
     border-radius: 20px;
     border: 2px solid white;
 }
 
-.container-custom>h1{
+.container-custom>h1 {
+    color: white;
+    font-weight: 700;
     text-shadow: 2px 2px 2px black;
     font-size: 4rem;
     text-align: center;
 }
 
 
-.card-group{
-    display: flex;
-    color: black;
-    gap: 10%;
-
-}
-
-.card-group>.card{
-    transition: 500ms;
-}
-
-.card-group>.card:nth-child(1):hover{
-    background-color: var(--verde);
-
-}
-
-.card-group>.card:nth-child(2):hover{
-    background-color: var(--rojo);
-}
-
-.card-group>.card:nth-child(1)>.card-body>.btn-primary{
-    background-color: var(--verdedark);
-    border-color: white;
-    color: white;
-}
-
-.card-group>.card>.card-body>.btn-primary:hover{
-    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
-}
-
-.card-group>.card:nth-child(2)>.card-body>.btn-primary{
-    background-color: var(--rojodark);
-    border-color: white;
-    color: white;
-}
-
-#tour-container.card:nth-child(2)>.card-body>.btn-primary{
-    background-color: var(--rojodark);
-}
-
-
 /* Tour bien */
-#tour-container{
+#tour-container {
     display: flex;
     justify-content: center;
     color: black;
@@ -281,41 +241,54 @@ div.text-container {
 
 }
 
-.card-1, .card-2{
+.card{
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.card-1,
+.card-2 {
     transition: ease-in-out 250ms;
+
 }
 
-.card-1:hover, .card-2:hover{
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+.card-1:hover,
+.card-2:hover {
+    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.2);
 }
 
-.card-1:hover{
+.card-1:hover {
     background-color: var(--verde);
 }
 
-.card-2:hover{
+.card-2:hover {
     background-color: var(--rojo);
 }
 
-.card img{
-    width: 100%;
-    height: 40%;
-    object-fit: fill;
+.card img {
+    aspect-ratio: 2/1;
+    object-fit: cover;
 }
 
-.card .card-title{
+.card .card-title {
+    height: 8%;
     font-size: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.card-1 .btn-primary{
+.card-1 .btn-custom {
     background-color: var(--verdedark);
     border-color: white;
     color: white;
 }
 
-.card-2 .btn-primary{
+.card .btn:hover {
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-2 .btn {
     background-color: var(--rojodark);
     border-color: white;
     color: white;
