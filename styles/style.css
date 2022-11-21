@@ -319,6 +319,33 @@ div.text-container {
 
 
 
+.sub-container-all{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-container-izq{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+
+.sub-container-izq>ul>li{
+    margin: 14px
+}
+
+p.text-container-izq{
+    margin: auto;
+    font-size: 14px;
+    padding: 20px;
+
+}
+
+.sub-container-der{
+    width: fit-content;
+}
+
 
 
 
