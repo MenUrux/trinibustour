@@ -230,7 +230,7 @@ div.text-container {
     gap: 1rem;
     align-items: center;
     font-size: 2vh;
-    width: 70vw;
+    width: 90vw;
     padding: 20px;
     backdrop-filter: blur(10px);
 
@@ -253,7 +253,7 @@ div.text-container {
     justify-content: center;
     color: black;
     gap: 10%;
-
+    flex-wrap: wrap;
 }
 
 .card{
@@ -321,28 +321,39 @@ div.text-container {
 
 .sub-container-all{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    background-color: white;
+    flex-wrap: wrap;
 }
 
 .sub-container-izq{
-    width: 40%;
+    width: 50%;
     height: 100%;
-    background-color: red;
+    padding: 14px;
 }
 
-.sub-container-izq>ul>li{
-    margin: 14px
+
+.sub-container-izq .info{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word
 }
 
 p.text-container-izq{
     margin: auto;
     font-size: 14px;
     padding: 20px;
-
+    width: fit-content;
 }
 
 .sub-container-der{
+    padding: 14px;
+}
+
+.sub-container-der>iframe{
+    aspect-ratio: 1/1;
     width: fit-content;
 }
 
@@ -351,7 +362,19 @@ p.text-container-izq{
 
 
 
+
 /* Responsive */
+
+@media (max-width: 1024px) {
+    #tour-container{
+        flex-wrap: wrap;
+    }
+
+    .sub-container-izq{
+        width: 100%;
+        padding: 14px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -367,6 +390,7 @@ p.text-container-izq{
     .carousel-item .title {
         font-size: 2rem;
     }
+
 
 
 }
