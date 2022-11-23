@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url("../webfonts/fave/stylesheet.css");
+
+
 
 :root {
 
-    --rojo: #d7263dff;
-    --rojodark: rgb(163, 34, 51);
+    /* --rojo: #d7263dff; */
+    --rojo: #cf1818;
+    --rojodark: #a32233;
     --rojoalpha: #d7263e74;
-    --amarillo: #e2a926ff;
+    --amarillo: #FFD93B;
     --texto: #051923ff;
     --texto-secundario: #0197f6ff;
     --blue-munsell: #448fa3ff;
@@ -14,7 +18,7 @@
     --blanco: #ffffff;
     --verde: #9ae19d;
     --verdedark: #537a5a;
-    --celeste: #0582caff;
+    --celeste: #00c4ff;
     --celeste2: #0582caff;
 
     --blue-jeans: #00a6fbff;
@@ -29,7 +33,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
 }
 
 body {
@@ -48,7 +52,7 @@ nav a:visited {
 }
 
 nav {
-    background: linear-gradient(-45deg, var(--celeste), var(--celeste), #48ceff, var(--celeste));
+    background: linear-gradient(-45deg, var(--celeste2), var(--celeste2), #48ceff, var(--celeste));
     background-size: 400% 400%;
     height: 100vh;
     backdrop-filter: blur(500px);
@@ -58,7 +62,7 @@ nav {
     /* background-color: var(--bg-blanco); */
 }
 
-.menu-all {
+#menu-all {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -77,9 +81,43 @@ nav {
 }
 
 .nav-title {
-    font-size: 36px;
-    font-variant: small-caps;
-    font-style: italic;
+    font-family: 'favecondensed_two_pro', sans-serif;
+    font-size: 3rem;
+    text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.38), 0px 2px 2px black;
+    transition: 250ms ease-in-out;
+}
+.title-secundario span{
+    font-family: 'favecondensed_two_pro', sans-serif;
+    font-size: 10rem;
+}
+
+.title-secundario span:nth-child(1){
+    color: var(--amarillo);
+}
+.title-secundario span:nth-child(2){
+    color: var(--celeste);
+}
+.title-secundario span:nth-child(3){
+    color: var(--rojo);
+}
+
+.title-secundario span:hover{
+    filter: blur(20px);
+    /* transform: rotateX(20deg); */
+}
+
+.nav-title span:nth-child(1){
+    color: var(--amarillo);
+}
+.nav-title span:nth-child(2){
+    color: var(--celeste);
+}
+.nav-title span:nth-child(3){
+    color: var(--rojo);
+}
+
+.nav-title:hover {
+    transform: rotateZ(5deg);
 }
 
 .menu-left {
@@ -180,7 +218,7 @@ li::marker {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.carousel-item:nth-child(1) {
+.carousel-item:nth-child(3) {
     background: url(../img/museo-historico-fernando.jpg) no-repeat center center fixed;
     background-size: cover;
 }
@@ -190,7 +228,7 @@ li::marker {
     background-size: cover;
 }
 
-.carousel-item:nth-child(3) {
+.carousel-item:nth-child(1) {
     background: url(../img/parque-centenario-trinidad.jpg) no-repeat center center fixed;
     background-size: cover;
 }
@@ -361,7 +399,7 @@ div.text-container {
 #roja {
     display: none;
     width: 100%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     height: 500px;
     transition: 2s;
 }
@@ -417,6 +455,24 @@ p.text-container-izq {
 
 
 
+.faq{
+    display: flex;
+    flex-direction: column;
+}
+
+.faq>.pregunta{
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.faq>.respuesta{
+    font-size: 0.8em;
+}
+
+
+
+
+
 
 
 
@@ -458,7 +514,7 @@ p.text-container-izq {
 
 
 @media (max-width: 425px) {
-    .menu-all {
+    #menu-all {
         flex-direction: row;
         justify-content: center;
         align-items: center;

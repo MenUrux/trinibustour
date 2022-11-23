@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fave';
+    src: local('Fave Condensed Two Pro'), local('Fave-Condensed-Two-Pro'),
+        url('Fave-CondensedTwoPro.woff2') format('woff2'),
+        url('Fave-CondensedTwoPro.woff') format('woff'),
+        url('Fave-CondensedTwoPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

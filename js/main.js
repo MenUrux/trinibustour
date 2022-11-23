@@ -1,11 +1,12 @@
-const left = document.getElementById("left-side");
+// window.onscroll = function() {scrollFunction()};
 
-const handleOnMove = e => {
-    const p = e.clientX / window.innerWidth * 100;
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("menu-all").style.padding = "1px";
+//     document.getElementsByClassName("nav-img").style.fontSize = "25px";
+//   } else {
+//     document.getElementById("menu-all").style.padding = "2px";
+//     document.getElementsByClassName("nav-img").style.width = "20px";
+//   }
+// }
 
-    left.style.width = `${p}%`;
-}
-
-document.onmousemove = e => handleOnMove(e);
-
-document.ontouchmove = e => handleOnMove(e.touches[0]);
