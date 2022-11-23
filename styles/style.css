@@ -85,7 +85,7 @@ nav {
 
 .nav-title {
     font-family: 'favecondensed_two_pro', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.38), 0px 2px 2px black;
     transition: 250ms ease-in-out;
 }
@@ -299,6 +299,7 @@ div.text-container {
 
 
 .container-custom {
+    font-family: 'Barlow Condensed', sans-serif;
     background: linear-gradient(-45deg, var(--celeste), var(--celeste), #48ceff, var(--celeste));
     margin-top: 2%;
     margin-bottom: 2%;
@@ -415,6 +416,14 @@ div.text-container {
     transition: 2s;
 }
 
+#verde {
+    display: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    height: 500px;
+    transition: 2s;
+}
+
 
 
 
@@ -431,7 +440,11 @@ div.text-container {
 }
 
 .sub-container-ruta {
-    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .sub-container-izq {
