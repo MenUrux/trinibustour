@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url("../webfonts/fave/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
@@ -71,6 +72,8 @@ nav {
     z-index: 99;
     width: 100%;
     height: min-content;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
 }
 
 .nav-img {
@@ -85,25 +88,6 @@ nav {
     font-size: 3rem;
     text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.38), 0px 2px 2px black;
     transition: 250ms ease-in-out;
-}
-.title-secundario span{
-    font-family: 'favecondensed_two_pro', sans-serif;
-    font-size: 10rem;
-}
-
-.title-secundario span:nth-child(1){
-    color: var(--amarillo);
-}
-.title-secundario span:nth-child(2){
-    color: var(--celeste);
-}
-.title-secundario span:nth-child(3){
-    color: var(--rojo);
-}
-
-.title-secundario span:hover{
-    filter: blur(20px);
-    /* transform: rotateX(20deg); */
 }
 
 .nav-title span:nth-child(1){
@@ -120,6 +104,33 @@ nav {
     transform: rotateZ(5deg);
 }
 
+.title-secundario{
+    animation: animation-title 5s ease-in-out infinite;
+}
+
+.title-secundario span{
+    font-family: 'favecondensed_two_pro', sans-serif;
+    font-size: 10rem;
+}
+
+.title-secundario div{
+    transition: 1s;
+    animation-fill-mode: forwards;
+    animation: animation-title 5s ease-in-out infinite;
+}
+
+.title-secundario div>span:nth-child(1){
+    color: var(--amarillo);
+}
+.title-secundario div>span:nth-child(2){
+    color: var(--celeste);
+}
+.title-secundario div>span:nth-child(3){
+    color: var(--rojo);
+}
+
+
+
 .menu-left {
     display: flex;
     text-align: center;
@@ -129,6 +140,7 @@ nav {
     margin-left: 16px;
 
 }
+
 
 .menu-right {
     display: flex;
@@ -173,7 +185,7 @@ li::marker {
     height: calc(100vh - 90px);
     width: 100vw;
     background-size: cover;
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
 }
 
 .carousel-item h2 {
@@ -193,7 +205,6 @@ li::marker {
 
 .carousel-item:nth-child(3) .title .title-secundario {
     color: var(--rojo);
-    font-style: italic;
 }
 
 
@@ -508,6 +519,12 @@ p.text-container-izq {
         font-size: 2rem;
     }
 
+    .title-secundario span{
+        font-family: 'favecondensed_two_pro', sans-serif;
+        font-size: 5rem;
+    }
+    
+
 
 
 }
@@ -576,7 +593,32 @@ p.text-container-izq {
         font-size: 2rem;
         text-align: center;
     }
+
+    .title-secundario span{
+        font-family: 'favecondensed_two_pro', sans-serif;
+        font-size: 4rem;
+    }
     
+    
+}
+
+@keyframes animation-title {
+    0% {
+        transform:  rotateY(0deg);
+	}
+
+    40% {
+        transform:  rotateY(0deg);
+	}
+
+    50% {
+        transform:  rotateY(25deg);
+        
+	}
+	100% {
+        transform:  rotateY(0deg);
+        
+	}
 }
 
 @keyframes rotate {
