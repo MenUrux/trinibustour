@@ -2,6 +2,8 @@
 
 document.getElementById("rutaroja").onclick = function () { rutaRojaFunction() };
 document.getElementById("rutaverde").onclick = function () { rutaVerdeFunction() };
+document.getElementById("volverruta-a").onclick = function () { rutaVolverAFunction() };
+document.getElementById("volverruta-b").onclick = function () { rutaVolverBFunction() };
 
 
 tourTodo = document.getElementById("tour-todo")
@@ -38,12 +40,6 @@ function rutaRojaFunction() {
         setTimeout(() => {
             tourTodo.style.background = 'linear-gradient(-45deg, #a32233, #a32233, #d7263dff, #a32233';
         })
-
-
-
-
-        console.log('ruta ' + rutaRoja.style.display);
-        console.log('Cards ' + cardsContainer.style.display);
     }
 
 }
@@ -71,6 +67,24 @@ function rutaVerdeFunction() {
         console.log('ruta ' + rutaVerde.style.display);
         console.log('Cards ' + cardsContainer.style.display);
     }
+
+}
+
+function rutaVolverAFunction() {
+
+        rutaVerde.style.display = 'none';
+        cardsContainer.style.display = 'flex';
+        tourTodo.style.background = 'linear-gradient(-45deg, #00c4ff, #00c4ff, #48ceff, #00c4ff)';
+        rutaRoja.style.display = 'none';
+
+}
+
+function rutaVolverBFunction() {
+
+    rutaVerde.style.display = 'none';
+    cardsContainer.style.display = 'flex';
+    tourTodo.style.background = 'linear-gradient(-45deg, #00c4ff, #00c4ff, #48ceff, #00c4ff)';
+    rutaRoja.style.display = 'none';
 
 }
 
@@ -150,32 +164,4 @@ for (var i = 0; i < radVerde.length; i++) {
 
     });
 }
-
-
-// let seleccionarturno = document.getElementById('seleccionarxd');
-// seleccionarturno.addEventListener('click', () => {
-//     let selected = document.querySelector('input[type="radio"]:checked');
-
-//     let turno = String(selected.value);
-//     console.log(turno);
-//     if (turno == 'turnoUno') {
-//         console.log('seleccionado');
-//         horarioPartidaRojo.textContent = '9:30';
-//         horarioPartidaVerde.textContent = '9:30';
-//     }
-//     else if (turno == 'turnoDos') {
-//         console.log('selecc');
-//         horarioPartidaRojo.textContent = '12:30';
-//         horarioPartidaVerde.textContent = '12:30';
-//     }
-
-// })
-
-
-// document.getElementById("seleccionarxd").onclick = function() {mostrarTurno()};
-
-
-// function mostrarTurno(){
-//     console.log('dentro 1 ' +turnoUno)
-// console.log('dentro 2 ' +turnoDos)
 

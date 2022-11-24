@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url("../webfonts/fave/stylesheet.css");
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -401,7 +400,8 @@ div.text-container {
     color: white;
 }
 
-.card .btn:hover {
+.card .btn:hover,
+.btn:hover {
     box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -413,19 +413,12 @@ div.text-container {
 
 
 
-#roja {
-    display: none;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    height: 500px;
-    transition: 2s;
-}
-
+#roja,
 #verde {
     display: none;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
-    height: 500px;
+    height: auto;
     transition: 2s;
 }
 
@@ -453,7 +446,7 @@ div.text-container {
     border-bottom-right-radius: 10px;
 }
 
-.container-ruta{
+.container-ruta {
     display: flex;
     justify-content: space-around;
 }
@@ -487,11 +480,14 @@ p.text-container-izq {
     width: fit-content;
 }
 
-.info-tour{
+.info-tour {
+    display: flex;
+    justify-content: space-around;
     margin: 50px;
 }
 
-#horario-partida-rojo, #horario-partida-verde{
+#horario-partida-rojo,
+#horario-partida-verde {
     font-size: 1.4em;
     font-weight: 500;
     text-decoration: underline;

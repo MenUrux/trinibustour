@@ -60,8 +60,8 @@
                                     Museo <br>
                                     Zooilogico <br>
                                 </p>
-                                <a id="rutaverde" class="btn btn-success btn-custom mt-auto align-self-center"><i
-                                        class="fi fi-rr-bus-alt"> </i>Más información</a>
+                                <a id="rutaverde" class="btn btn-success btn-custom mt-auto align-self-center"> </i>Más
+                                    información</a>
                             </div>
                         </div>
                     </div>
@@ -72,14 +72,17 @@
                                 <h5 class="card-title"> RUTA ROJA</h5>
                                 <hr>
                                 <p class="card-text">Balneario Don Ricardo <br> Ecoparque Talice <br> Plaza Flores</p>
-                                <a id="rutaroja" class="btn btn-danger btn-primary mt-auto align-self-center"><i
-                                        class="fi fi-rr-bus-alt"> </i>Más información</a>
+                                <a id="rutaroja" class="btn btn-danger btn-primary mt-auto align-self-center"></i>Más
+                                    información</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div id="roja" class="sub-container-ruta ">
+                    <button type="button" id="volverruta-a" class="btn btn-danger align-self-start"><i
+                            class="fa-solid fa-arrow-left"></i> Volver atrás</button>
+                    <h5 class="align-self-center">Información sobre el tour: RUTA ROJO - "Tour corto"</h5>
                     <div class="container-ruta">
                         <div>
                             <h3>Visitamos:</h3>
@@ -104,7 +107,6 @@
                     </div>
                     <hr>
                     <div class="info-tour">
-                        <h5>Información sobre el tour: RUTA ROJA - "Tour corto"</h5>
                         <p id="informacion-tour">Partimos desde nuestra oficina: <span id="horario-partida-rojo"></span>
                             <br>
                             Destino: Balneario Don Ricardo <span id="horario-parada-uno-rojo"></span><br>
@@ -113,49 +115,98 @@
                             Fin de tour: <span id="horario-final-rojo"></span><br>
 
                         </p>
-                    </div>
-                </div>
-
-                <div id="verde" class="sub-container-ruta ">
-                    <div class="container-ruta">
-                        <div>
-                            <h3>Visitamos:</h3>
-                            <ul>
-                                <li><i class="fa-solid fa-umbrella-beach"></i> Balneario Don Ricardo</li>
-                                <li><i class="fa-solid fa-seedling"></i> Ecoparque Talice</li>
-                                <li><i class="fa-solid fa-tree"></i> Plaza Flores</li>
-                            </ul>
-                        </div>
-                        <form name="turnoVerdeForm">
-                            <h4>Seleccione su turno preferido</h4>
-                            <div>
-                                <label><input type="radio" id="turnoUno" name="turno" value="turnoUno">
-                                    Turno uno (por la mañana)</label>
+                        <form>
+                            <div class="form-group">
+                                <label for="inputNombre">Tu nombre</label>
+                                <input type="name" class="form-control" id="nameFormRoja" placeholder="María">
                             </div>
 
-                            <div>
-                                <label><input type="radio" id="turnoDos" name="turno" value="turnoDos">
-                                    Turno dos (por la tarde)</label>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="emailFormRoja"
+                                    placeholder="maría@email.com">
+                            </div>
+
+                            <div class="form-group col-md-5">
+                                <label for="inputCantidad">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidadFormRoja">
                             </div>
                         </form>
-                    </div>
-                    <hr>
-                    <div class="info-tour">
-                        <h5>Información sobre el tour: RUTA VERDE - "Tour largo"</h5>
-                        <p id="informacion-tour">Partimos desde nuestra oficina: <span
-                                id="horario-partida-verde"></span>
-                            <br>
-                            Destino: Balneario Don Ricardo <span id="horario-parada-uno-verde"></span><br>
-                            Destino: Ecoparque Talice <span id="horario-parada-dos-verde"></span><br>
-                            Destino: Plaza Flores <span id="horario-parada-tres-verde"></span><br>
-                            Destino: Plaza Flores <span id="horario-parada-cuatro-verde"></span><br>
-                            Fin de tour: <span id="horario-final-verde"></span><br>
+                    </div> <button type="button" id="comprar-verde"
+                        class="btn btn-success align-self-center col-lg-4">Reservar</button>
 
-                        </p>
-                    </div>
                 </div>
+
+
+            </div>
+
+            <div id="verde" class="sub-container-ruta ">
+                <button type="button" id="volverruta-b" class="btn btn-danger align-self-start"><i
+                        class="fa-solid fa-arrow-left"></i> Volver
+                    atrás</button>
+                <h5 class="align-self-center">Información sobre el tour: RUTA VERDE - "Tour largo"</h5>
+                <div class="container-ruta">
+
+                    <div>
+                        <h3>Visitamos:</h3>
+                        <ul>
+
+                            <li><i class="fa-solid fa-tree"></i> Plaza Constitución</li>
+                            <li><i class="fa-solid fa-church"></i> Iglesia Santisima Trinidad</li>
+                            <li><i class="fa-solid fa-landmark"></i> Museo</li>
+                            <li><i class="fa-solid fa-wrench"></i> Zooilogico</li>
+                        </ul>
+                    </div>
+                    <form name="turnoVerdeForm">
+                        <h4>Seleccione su turno preferido</h4>
+                        <div>
+                            <label><input type="radio" id="turnoUno" name="turno" value="turnoUno">
+                                Turno uno (por la mañana)</label>
+                        </div>
+
+                        <div>
+                            <label><input type="radio" id="turnoDos" name="turno" value="turnoDos">
+                                Turno dos (por la tarde)</label>
+                        </div>
+                    </form>
+                </div>
+
+                <hr>
+                <div class="info-tour">
+
+                    <p id="informacion-tour">Partimos desde nuestra oficina: <span id="horario-partida-verde"></span>
+                        <br>
+                        Destino: Balneario Don Ricardo <span id="horario-parada-uno-verde"></span><br>
+                        Destino: Ecoparque Talice <span id="horario-parada-dos-verde"></span><br>
+                        Destino: Plaza Flores <span id="horario-parada-tres-verde"></span><br>
+                        Destino: Plaza Flores <span id="horario-parada-cuatro-verde"></span><br>
+                        Fin de tour: <span id="horario-final-verde"></span><br>
+
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputNombre">Tu nombre</label>
+                            <input type="name" class="form-control" id="nameFormVerde" placeholder="María">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="emailFormVerde" placeholder="maría@email.com">
+                        </div>
+
+                        <div class="form-group col-md-5">
+                            <label for="inputCantidad">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidadFormVerde">
+                        </div>
+                    </form>
+                </div>
+
+
+                <button type="button" id="comprar-verde"
+                    class="btn btn-success align-self-center col-lg-4">Reservar</button>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="../js/tours.js"></script>
