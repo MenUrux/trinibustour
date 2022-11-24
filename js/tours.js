@@ -77,5 +77,5 @@ if (primersalida == true){
 }
 else{
     horarioPartidaRojo.textContent = '12:30';
-    horarioPartidaVerde.textContent = '12:30';
+    horarioPartidaVerde.textContent = '12b:30';
 }
