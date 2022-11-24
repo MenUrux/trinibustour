@@ -26,8 +26,10 @@
         <div class="menu-right">
             <li><a class="menu-item" href="../index.html"> <i class="fa-solid fa-house"></i> Inicio</a></li>
             <li><a class="menu-item" href="../pages/tours.html"><i class="fa-solid fa-bus-simple"></i> Tours</a></li>
-            <li><a class="menu-item" href="../pages/faq.html"><i class="fa-solid fa-circle-question"></i> Preguntas frecuentes</a></li>
-            <li><a class="menu-item" href="../pages/aboutus.html"><i class="fa-solid fa-circle-info"></i> Acerca de</a></li>
+            <li><a class="menu-item" href="../pages/faq.html"><i class="fa-solid fa-circle-question"></i> Preguntas
+                    frecuentes</a></li>
+            <li><a class="menu-item" href="../pages/aboutus.html"><i class="fa-solid fa-circle-info"></i> Acerca de</a>
+            </li>
         </div>
     </nav>
 
@@ -58,8 +60,7 @@
                                     Museo <br>
                                     Zooilogico <br>
                                 </p>
-                                <a href="#" id="rutaverde"
-                                    class="btn btn-success btn-custom mt-auto align-self-center"><i
+                                <a id="rutaverde" class="btn btn-success btn-custom mt-auto align-self-center"><i
                                         class="fi fi-rr-bus-alt"> </i>Más información</a>
                             </div>
                         </div>
@@ -71,8 +72,7 @@
                                 <h5 class="card-title"> RUTA ROJA</h5>
                                 <hr>
                                 <p class="card-text">Balneario Don Ricardo <br> Ecoparque Talice <br> Plaza Flores</p>
-                                <a href="#" id="rutaroja"
-                                    class="btn btn-danger btn-primary mt-auto align-self-center"><i
+                                <a id="rutaroja" class="btn btn-danger btn-primary mt-auto align-self-center"><i
                                         class="fi fi-rr-bus-alt"> </i>Más información</a>
                             </div>
                         </div>
@@ -80,38 +80,81 @@
                 </div>
 
                 <div id="roja" class="sub-container-ruta ">
-                    <h3>Visitamos:</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-umbrella-beach"></i> Balneario Don Ricardo</li>
-                        <li><i class="fa-solid fa-seedling"></i> Ecoparque Talice</li>
-                        <li><i class="fa-solid fa-tree"></i> Plaza Flores</li>
-                    </ul>
+                    <div class="container-ruta">
+                        <div>
+                            <h3>Visitamos:</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-umbrella-beach"></i> Balneario Don Ricardo</li>
+                                <li><i class="fa-solid fa-seedling"></i> Ecoparque Talice</li>
+                                <li><i class="fa-solid fa-tree"></i> Plaza Flores</li>
+                            </ul>
+                        </div>
+                        <form name="turnoForm">
+                            <h4>Seleccione su turno preferido</h4>
+                            <div>
+                                <label><input type="radio" id="turnoUno" name="turno" value="turnoUno">
+                                    Turno uno (por la mañana)</label>
+                            </div>
+
+                            <div>
+                                <label><input type="radio" id="turnoDos" name="turno" value="turnoDos">
+                                    Turno dos (por la tarde)</label>
+                            </div>
+                        </form>
+                    </div>
                     <hr>
-                    <p>Salimos desde nuestra oficina a las <span id="horario-partida-rojo"></span>hs, recorremos Balneario Don Ricardo, luego el Ecoparque Talice y finalmente la Plaza Flores.
-                    
-                    </p>
+                    <div class="info-tour">
+                        <h5>Información sobre el tour: RUTA ROJA - "Tour corto"</h5>
+                        <p id="informacion-tour">Partimos desde nuestra oficina: <span id="horario-partida-rojo"></span>
+                            <br>
+                            Destino: Balneario Don Ricardo <span id="horario-parada-uno-rojo"></span><br>
+                            Destino: Ecoparque Talice <span id="horario-parada-dos-rojo"></span><br>
+                            Destino: Plaza Flores <span id="horario-parada-tres-rojo"></span><br>
+                            Fin de tour: <span id="horario-final-rojo"></span><br>
+
+                        </p>
+                    </div>
                 </div>
 
                 <div id="verde" class="sub-container-ruta ">
-                    <h3>Visitamos:</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-umbrella-beach"></i> Balneario Don Ricardo</li>
-                        <li><i class="fa-solid fa-seedling"></i> Ecoparque Talice</li>
-                        <li><i class="fa-solid fa-tree"></i> Plaza Constitución</li>
-                    </ul>
+                    <div class="container-ruta">
+                        <div>
+                            <h3>Visitamos:</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-umbrella-beach"></i> Balneario Don Ricardo</li>
+                                <li><i class="fa-solid fa-seedling"></i> Ecoparque Talice</li>
+                                <li><i class="fa-solid fa-tree"></i> Plaza Flores</li>
+                            </ul>
+                        </div>
+                        <form name="turnoVerdeForm">
+                            <h4>Seleccione su turno preferido</h4>
+                            <div>
+                                <label><input type="radio" id="turnoUno" name="turno" value="turnoUno">
+                                    Turno uno (por la mañana)</label>
+                            </div>
+
+                            <div>
+                                <label><input type="radio" id="turnoDos" name="turno" value="turnoDos">
+                                    Turno dos (por la tarde)</label>
+                            </div>
+                        </form>
+                    </div>
                     <hr>
-                    <p>Salimos desde nuestra oficina a las <span id="horario-partida-verde"></span>hs, recorremos Balneario Don Ricardo, luego el Ecoparque Talice y finalmente la Plaza Flores.
-                    
-                    </p>
+                    <div class="info-tour">
+                        <h5>Información sobre el tour: RUTA VERDE - "Tour largo"</h5>
+                        <p id="informacion-tour">Partimos desde nuestra oficina: <span
+                                id="horario-partida-verde"></span>
+                            <br>
+                            Destino: Balneario Don Ricardo <span id="horario-parada-uno-verde"></span><br>
+                            Destino: Ecoparque Talice <span id="horario-parada-dos-verde"></span><br>
+                            Destino: Plaza Flores <span id="horario-parada-tres-verde"></span><br>
+                            Destino: Plaza Flores <span id="horario-parada-cuatro-verde"></span><br>
+                            Fin de tour: <span id="horario-final-verde"></span><br>
+
+                        </p>
+                    </div>
                 </div>
-
-
-
-
-
             </div>
-
-
         </div>
     </div>
 
