@@ -537,14 +537,28 @@ p.text-container-izq {
 
 
 @media (max-width: 768px) {
+    .menu-left{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
     .nav-img {
-        margin: 5px;
-        width: 5rem;
+        display: none;
     }
 
     .nav-title {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+
     }
+    .nav-title span {
+        margin: -0.5rem;
+    }
+
 
     .carousel-item .title {
         font-size: 2rem;
@@ -570,6 +584,7 @@ p.text-container-izq {
 
     .menu-left {
         margin: 0px;
+        padding: 3rem;
     }
 
     .menu-right {
@@ -580,6 +595,10 @@ p.text-container-izq {
         display: flex;
         padding: 0.8rem;
         flex-direction: column;
+    }
+    
+    .nav-title{
+       
     }
 
     .carousel-item .title {
@@ -605,6 +624,7 @@ p.text-container-izq {
     .menu-left {
         width: 100%;
         margin-left: 0px;
+        padding: 2rem;
     }
 
     .menu-right {

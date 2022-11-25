@@ -5,10 +5,10 @@ formVerde.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURLVerde, { method: 'POST', body: new FormData(formVerde) })
         .then(response => Swal.fire({
-            title: 'Muchas gracias!',
+            title: '¡Muchas gracias!',
             html: 'Por favor ve a nuestro local para hacer efectiva tu reserva. <br> <b>RUTA VERDE</b>',
             icon: 'success',
-            confirmButtonText: 'Ahí vamos!'
+            confirmButtonText: '¡Ahí vamos!'
         }))
         .catch(error => console.error('Error!', error.message))
 })
@@ -20,10 +20,10 @@ formRoja.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURLRoja, { method: 'POST', body: new FormData(formRoja) })
         .then(response => Swal.fire({
-            title: 'Muchas gracias!',
+            title: '¡Muchas gracias!',
             html: 'Por favor ve a nuestro local para hacer efectiva tu reserva. <br> <b>RUTA ROJA</b>',
             icon: 'success',
-            confirmButtonText: 'Ahí vamos!'
+            confirmButtonText: '¡Ahí vamos!'
         }))
         .catch(error => console.error('Error!', error.message))
 })

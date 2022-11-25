@@ -1,10 +1,7 @@
-
-
 document.getElementById("rutaroja").onclick = function () { rutaRojaFunction() };
 document.getElementById("rutaverde").onclick = function () { rutaVerdeFunction() };
 document.getElementById("volverruta-a").onclick = function () { rutaVolverAFunction() };
 document.getElementById("volverruta-b").onclick = function () { rutaVolverBFunction() };
-
 
 tourTodo = document.getElementById("tour-todo")
 rutaRoja = document.getElementById("roja");
@@ -16,14 +13,12 @@ horarioParadaUnoRojo = document.getElementById('horario-parada-uno-rojo');
 horarioParadaDosRojo = document.getElementById('horario-parada-dos-rojo');
 horarioParadaTresRojo = document.getElementById('horario-parada-tres-rojo');
 horarioFinalRojo = document.getElementById('horario-final-rojo');
-
 horarioPartidaVerde = document.getElementById('horario-partida-verde');
 horarioParadaUnoVerde = document.getElementById('horario-parada-uno-verde');
 horarioParadaDosVerde = document.getElementById('horario-parada-dos-verde');
 horarioParadaTresVerde = document.getElementById('horario-parada-tres-verde');
 horarioParadaCuatroVerde = document.getElementById('horario-parada-cuatro-verde');
 horarioFinalVerde = document.getElementById('horario-final-verde');
-
 
 function rutaRojaFunction() {
 
@@ -57,7 +52,6 @@ function rutaVerdeFunction() {
         tourTodo.style.transition.backgroundColor = "all 1s"
 
         setTimeout(() => {
-            // rutaRoja.style.backgroundColor = rojo;
             tourTodo.style.background = 'linear-gradient(-45deg, #00AA00, #00ff00, #00AA00, #00AA00';
         })
 
@@ -87,7 +81,6 @@ function rutaVolverBFunction() {
     rutaRoja.style.display = 'none';
 
 }
-
 
 var rad = document.turnoForm.turno;
 var prev = null;
